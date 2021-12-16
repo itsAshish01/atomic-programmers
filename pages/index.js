@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Navbar from '../components/Navbar';
+
+// Sections
 import Hero from '../sections/Hero';
 import SectionAbout from '../sections/SectionAbout';
+import SectionProjects from '../sections/SectionProjects';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Hero />
       <SectionAbout />
+      <SectionProjects />
     </div>
   );
 }
