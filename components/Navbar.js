@@ -42,7 +42,7 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
 
-              <nav className='hidden lg:flex'>
+              <nav className='hidden lg:flex z-50'>
                 <div className='flex lg:gap-x-6'>
                   {navigation.map((item) => (
                     <Link key={item.name} href={item.href}>

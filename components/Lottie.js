@@ -10,7 +10,7 @@ const Lottie = ({ name }) => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      animationData: require(`../lotties/${name}`),
+      animationData: require(`../assets/lotties/${name}`),
     });
   }, [name]);
   return <div ref={container}></div>;
