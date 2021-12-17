@@ -29,10 +29,10 @@ const colors = {
   primary: 'text-indigo-500',
   linkBg: 'bg-indigo-50',
   linkText: 'text-indigo-600',
-  linkHoverBg: 'bg-indigo-200',
-  linkHoverText: 'text-indigo-700',
+  linkHoverBg: 'hover:bg-indigo-200',
+  linkHoverText: 'hover:text-indigo-700',
   chevron: 'text-indigo-300',
-  chevronHover: 'text-indigo-400',
+  chevronHover: 'group-hover:text-indigo-400',
 };
 
 const projects = [
@@ -68,6 +68,7 @@ const SectionProjects = () => {
       <div className='container mx-auto'>
         <SectionHeader section={details} colors={colors} />
       </div>
+      <SectionTabs projects={projects} />
     </section>
   );
 };

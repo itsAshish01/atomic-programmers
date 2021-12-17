@@ -21,11 +21,11 @@ const SectionHeader = ({ section, colors }) => {
       </p>
       <Link href={section.to}>
         <a
-          className={`group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap pr-2 pl-3 md:pr-3 md:pl-5 ${colors.linkBg} ${colors.linkText} hover:${colors.linkHoverBg} hover:${colors.linkHoverText} mt-8`}
+          className={`group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap pr-2 pl-3 md:pr-3 md:pl-5 ${colors.linkBg} ${colors.linkText} ${colors.linkHoverBg} ${colors.linkHoverText} mt-8`}
         >
           {section.linkText}{' '}
           <ChevronRightIcon
-            className={`overflow-visible ml-0.5 mt-px ${colors.chevron} group-hover:${colors.chevronHover} h-4 w-4`}
+            className={`overflow-visible ml-0.5 mt-px ${colors.chevron} ${colors.chevronHover} h-4 w-4`}
           />
         </a>
       </Link>

@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const SectionTabs = () => {
+const SectionTabs = ({ projects }) => {
   return (
     <div className='mt-10'>
       <Tab.Group>
