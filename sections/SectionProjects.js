@@ -1,9 +1,12 @@
 // components
 import SectionHeader from '../components/SectionHeader';
 import SectionTabs from '../components/SectionTabs';
+import ProjectsTab from '../Tabs/ProjectsTab';
+
+// Logo
+import ProjectsIcons from '../assets/sections-icon/projects-icon.png';
 
 // Icons
-import ProjectsIcons from '../assets/sections-icon/projects-icon.png';
 import { ClipboardCheckIcon } from '@heroicons/react/outline';
 import { MusicNoteIcon } from '@heroicons/react/outline';
 import { CurrencyRupeeIcon } from '@heroicons/react/outline';
@@ -68,7 +71,11 @@ const SectionProjects = () => {
       <div className='container mx-auto'>
         <SectionHeader section={details} colors={colors} />
       </div>
-      <SectionTabs projects={projects} />
+      <SectionTabs
+        projects={projects}
+        color='text-indigo-500'
+        Component={ProjectsTab}
+      />
     </section>
   );
 };

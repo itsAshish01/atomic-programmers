@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Hero from '../sections/Hero';
 import SectionAbout from '../sections/SectionAbout';
 import SectionProjects from '../sections/SectionProjects';
+import SectionDesigns from '../sections/SectionDesigns';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <SectionAbout />
       <SectionProjects />
+      <SectionDesigns />
     </div>
   );
 }

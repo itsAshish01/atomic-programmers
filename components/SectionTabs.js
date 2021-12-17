@@ -1,12 +1,11 @@
 // headless ui
 import { Tab } from '@headlessui/react';
-import Image from 'next/image';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const SectionTabs = ({ projects }) => {
+const SectionTabs = ({ projects, color, Component }) => {
   return (
     <div className='mt-10'>
       <Tab.Group>
@@ -17,11 +16,11 @@ const SectionTabs = ({ projects }) => {
           >
             {projects.map((project) => (
               <Tab
-                key={project}
+                key={project.name}
                 className={({ selected }) =>
                   classNames(
                     'group text-sm font-semibold w-full flex flex-col items-center gap-6',
-                    selected ? 'text-indigo-500' : ''
+                    selected ? `${color}` : ''
                   )
                 }
               >
@@ -33,16 +32,8 @@ const SectionTabs = ({ projects }) => {
         </div>
         <Tab.Panels className='mt-10 bg-slate-50 flex justify-center py-10 px-6'>
           {projects.map((project) => (
-            <Tab.Panel key={project}>
-              <a href={project.to} target='_blank' rel='noopener noreferrer'>
-                <Image
-                  src={project.img}
-                  alt={project.name}
-                  width={1080}
-                  height={615}
-                  className='hover:brightness-75'
-                />
-              </a>
+            <Tab.Panel key={project.name}>
+              <Component project={project} />
             </Tab.Panel>
           ))}
         </Tab.Panels>
