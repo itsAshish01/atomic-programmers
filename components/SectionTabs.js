@@ -30,10 +30,10 @@ const SectionTabs = ({ projects, color, Component }) => {
             ))}
           </Tab.List>
         </div>
-        <Tab.Panels className='mt-10 bg-slate-50 flex justify-center py-10 px-6'>
+        <Tab.Panels className='mt-10 bg-slate-50 py-10 px-6'>
           {projects.map((project) => (
-            <Tab.Panel key={project.name}>
-              <Component project={project} />
+            <Tab.Panel key={project.name} className='flex justify-center'>
+              <Component collection={project} />
             </Tab.Panel>
           ))}
         </Tab.Panels>
