@@ -12,6 +12,7 @@ import MemoryGame from '../assets/projects/memory-game.png';
 
 // headless ui
 import { Tab } from '@headlessui/react';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -71,9 +72,22 @@ const SectionTabs = () => {
             ))}
           </Tab.List>
         </div>
+        <Tab.Panels className='mt-10 bg-slate-50 flex justify-center py-10 px-6'>
+          {projects.map((project) => (
+            <Tab.Panel key={project}>
+              <a href={project.to} target='_blank' rel='noopener noreferrer'>
+                <Image
+                  src={project.img}
+                  alt={project.name}
+                  width={1080}
+                  height={615}
+                  className='hover:brightness-75'
+                />
+              </a>
+            </Tab.Panel>
+          ))}
+        </Tab.Panels>
       </Tab.Group>
-
-      <div className=''></div>
     </div>
   );
 };
