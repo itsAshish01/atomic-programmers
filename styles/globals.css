@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heroicon-sw-1 path {
+  stroke-width: 1.2 !important;
+}
