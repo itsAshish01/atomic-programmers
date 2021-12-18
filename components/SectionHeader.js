@@ -4,7 +4,7 @@ import Link from 'next/link';
 // Icons
 import { ChevronRightIcon } from '@heroicons/react/solid';
 
-const SectionHeader = ({ section, colors }) => {
+const SectionHeader = ({ section, colors, extra }) => {
   return (
     <div className='max-w-7xl mx-auto px-4 md:px-8'>
       <div className='w-16 h-16 rounded-full ring-1 ring-gray-900/10 shadow overflow-hidden'>
@@ -13,9 +13,16 @@ const SectionHeader = ({ section, colors }) => {
       <h2 className={`mt-8 font-semibold ${colors.primary}`}>
         {section.title}
       </h2>
-      <p className='mt-4 text-3xl md:text-4xl text-slate-900 font-extrabold tracking-tight'>
-        {section.subTitle}
-      </p>
+      {!extra && (
+        <p className='mt-4 text-3xl md:text-4xl text-slate-900 font-extrabold tracking-tight'>
+          {section.subTitle}
+        </p>
+      )}
+      {extra && (
+        <p className='mt-4 text-3xl md:text-4xl text-slate-900 font-extrabold tracking-tight'>
+          Tools we <span className='line-through'>use</span> love.
+        </p>
+      )}
       <p className='mt-4 max-w-3xl space-y-6 font-light lg:font-normal'>
         {section.description}
       </p>

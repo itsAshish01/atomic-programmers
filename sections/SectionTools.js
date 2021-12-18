@@ -119,7 +119,7 @@ const SectionTools = () => {
   return (
     <section className='pt-20 md:pt-40'>
       <div className='container mx-auto'>
-        <SectionHeader section={details} colors={colors} />
+        <SectionHeader section={details} colors={colors} extra={true} />
       </div>
       <SectionTabs
         color='text-sky-500'
