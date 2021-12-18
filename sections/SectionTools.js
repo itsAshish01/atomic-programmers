@@ -98,7 +98,7 @@ const tools = [
 const details = {
   icon: ToolsIcon,
   title: 'Tools',
-  subTitle: 'Tools we love',
+  subTitle: 'Tools we love.',
   description:
     '“We become what we behold. We shape our tools, and thereafter our tools shape us.” - Marshall McLuhan. Tools always plays an important role in an individaul professional life. Here are some of the tools we love and use for our work.',
   linkText: 'See more',

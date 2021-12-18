@@ -28,6 +28,8 @@ const SectionMessage = () => {
     <section className='pt-20 md:pt-40'>
       <div className='container mx-auto'>
         <SectionHeader section={details} colors={colors} />
+      </div>
+      <div className='bg-slate-50 mt-10 py-8'>
         <Form />
       </div>
     </section>
