@@ -1,5 +1,6 @@
 // Components
 import SectionHeader from '../components/SectionHeader';
+import Feature from '../components/Feature';
 
 // Logo
 import WhyUsIcon from '../assets/sections-icon/why-us-icon.png';
@@ -30,6 +31,7 @@ const SectionWhyUs = () => {
       <div className='container mx-auto'>
         <SectionHeader section={details} colors={colors} />
       </div>
+      <Feature />
     </section>
   );
 };
