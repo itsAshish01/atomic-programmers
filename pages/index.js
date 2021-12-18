@@ -8,6 +8,7 @@ import SectionDesigns from '../sections/SectionDesigns';
 import SectionTools from '../sections/SectionTools';
 import SectionWhyUs from '../sections/SectionWhyUs';
 import SectionMessage from '../sections/SectionMessage';
+import Footer from '../sections/Footer';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <SectionTools />
       <SectionWhyUs />
       <SectionMessage />
+      <Footer />
     </div>
   );
 }

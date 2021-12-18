@@ -51,42 +51,42 @@ const designs = [
       { url: Logo6, alt: 'Trackmate' },
     ],
   },
-  {
-    name: 'Posters',
-    icon: <PhotographIcon />,
-    imgs: [
-      { url: Logo1, alt: 'Ramgarh Cart' },
-      { url: Logo2, alt: 'Krypto' },
-      { url: Logo3, alt: 'Thinkcode' },
-      { url: Logo4, alt: 'Speedo' },
-      { url: Logo5, alt: 'Waves Music' },
-      { url: Logo6, alt: 'Trackmate' },
-    ],
-  },
-  {
-    name: 'Landing',
-    icon: <DesktopComputerIcon />,
-    imgs: [
-      { url: Logo1, alt: 'Ramgarh Cart' },
-      { url: Logo2, alt: 'Krypto' },
-      { url: Logo3, alt: 'Thinkcode' },
-      { url: Logo4, alt: 'Speedo' },
-      { url: Logo5, alt: 'Waves Music' },
-      { url: Logo6, alt: 'Trackmate' },
-    ],
-  },
-  {
-    name: 'Product',
-    icon: <TemplateIcon />,
-    imgs: [
-      { url: Logo1, alt: 'Ramgarh Cart' },
-      { url: Logo2, alt: 'Krypto' },
-      { url: Logo3, alt: 'Thinkcode' },
-      { url: Logo4, alt: 'Speedo' },
-      { url: Logo5, alt: 'Waves Music' },
-      { url: Logo6, alt: 'Trackmate' },
-    ],
-  },
+  // {
+  //   name: 'Posters',
+  //   icon: <PhotographIcon />,
+  //   imgs: [
+  //     { url: Logo1, alt: 'Ramgarh Cart' },
+  //     { url: Logo2, alt: 'Krypto' },
+  //     { url: Logo3, alt: 'Thinkcode' },
+  //     { url: Logo4, alt: 'Speedo' },
+  //     { url: Logo5, alt: 'Waves Music' },
+  //     { url: Logo6, alt: 'Trackmate' },
+  //   ],
+  // },
+  // {
+  //   name: 'Landing',
+  //   icon: <DesktopComputerIcon />,
+  //   imgs: [
+  //     { url: Logo1, alt: 'Ramgarh Cart' },
+  //     { url: Logo2, alt: 'Krypto' },
+  //     { url: Logo3, alt: 'Thinkcode' },
+  //     { url: Logo4, alt: 'Speedo' },
+  //     { url: Logo5, alt: 'Waves Music' },
+  //     { url: Logo6, alt: 'Trackmate' },
+  //   ],
+  // },
+  // {
+  //   name: 'Product',
+  //   icon: <TemplateIcon />,
+  //   imgs: [
+  //     { url: Logo1, alt: 'Ramgarh Cart' },
+  //     { url: Logo2, alt: 'Krypto' },
+  //     { url: Logo3, alt: 'Thinkcode' },
+  //     { url: Logo4, alt: 'Speedo' },
+  //     { url: Logo5, alt: 'Waves Music' },
+  //     { url: Logo6, alt: 'Trackmate' },
+  //   ],
+  // },
 ];
 
 const SectionDesigns = () => {
