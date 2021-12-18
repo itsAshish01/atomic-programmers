@@ -5,3 +5,45 @@
 .heroicon-sw-1 path {
   stroke-width: 1.2 !important;
 }
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  transition: all ease-out 0.3s;
+}
+
+.project-img:hover {
+  filter: brightness(0.9);
+  transform: scale(0.97);
+}
+
+.img-container {
+  padding: 0.25rem;
+  background: white;
+}
+
+.img-container img {
+  transition: all ease-out 0.3s;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .section-grid {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    gap: 2rem;
+  }
+
+  .img-container {
+    padding: 1.5rem;
+  }
+}

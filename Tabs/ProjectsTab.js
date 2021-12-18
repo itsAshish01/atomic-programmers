@@ -4,7 +4,7 @@ const ProjectsTab = ({ collection }) => {
   return (
     <a href={collection.to} target='_blank' rel='noopener noreferrer'>
       <Image
-        // className='transition-all ease-out duration-300 hover:brightness-75 hover:scale-95'
+        className='project-img rounded-lg'
         priority
         src={collection.img}
         alt={collection.name}
