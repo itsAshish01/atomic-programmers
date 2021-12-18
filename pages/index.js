@@ -5,6 +5,7 @@ import Hero from '../sections/Hero';
 import SectionAbout from '../sections/SectionAbout';
 import SectionProjects from '../sections/SectionProjects';
 import SectionDesigns from '../sections/SectionDesigns';
+import SectionTools from '../sections/SectionTools';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionAbout />
       <SectionProjects />
       <SectionDesigns />
+      <SectionTools />
     </div>
   );
 }
