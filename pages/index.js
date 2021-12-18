@@ -6,6 +6,7 @@ import SectionAbout from '../sections/SectionAbout';
 import SectionProjects from '../sections/SectionProjects';
 import SectionDesigns from '../sections/SectionDesigns';
 import SectionTools from '../sections/SectionTools';
+import SectionWhyUs from '../sections/SectionWhyUs';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <SectionProjects />
       <SectionDesigns />
       <SectionTools />
+      <SectionWhyUs />
     </div>
   );
 }

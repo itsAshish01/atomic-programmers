@@ -22,7 +22,7 @@ import Logo6 from '../assets/tools/tools-frontend/next.png';
 
 const tools = [
   {
-    name: 'Front-end',
+    name: 'Frontend',
     icon: <CodeIcon />,
     imgs: [
       { url: Logo1, alt: 'HTML' },
@@ -34,7 +34,7 @@ const tools = [
     ],
   },
   {
-    name: 'Back-end',
+    name: 'Backend',
     icon: <ServerIcon />,
     imgs: [
       { url: Logo1, alt: 'HTML' },
