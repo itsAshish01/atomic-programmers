@@ -46,7 +46,7 @@ const SectionAbout = () => {
         <h2 className='text-slate-900 text-4xl tracking-tight font-extrabold lg:text-5xl text-center'>
           Inside the atom
         </h2>
-        <p className='mt-6 max-w-3xl mx-auto text-lg font-light  text-center lg:tracking-wide'>
+        <p className='mt-6 max-w-3xl mx-auto text-lg font-light  text-center'>
           Atomic programmers is alias to the{' '}
           <span className='text-sky-500 font-normal'>Atom</span>, the basic
           building block of the universe. In the logo the brain represents the
