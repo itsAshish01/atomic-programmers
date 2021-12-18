@@ -1,24 +1,84 @@
 // components
 import SectionHeader from '../components/SectionHeader';
 import SectionTabs from '../components/SectionTabs';
+import DesignTabs from '../Tabs/DesignTabs';
 
 // Logo
 import ToolsIcon from '../assets/sections-icon/tools-icon.png';
 
 // Icons
-import { ClipboardCheckIcon } from '@heroicons/react/outline';
-import { MusicNoteIcon } from '@heroicons/react/outline';
-import { CurrencyRupeeIcon } from '@heroicons/react/outline';
+import { CodeIcon } from '@heroicons/react/outline';
+import { ServerIcon } from '@heroicons/react/outline';
+import { PencilIcon } from '@heroicons/react/outline';
 import { PuzzleIcon } from '@heroicons/react/outline';
+
+// Frontend
+import Logo1 from '../assets/tools/tools-frontend/html.png';
+import Logo2 from '../assets/tools/tools-frontend/css.png';
+import Logo3 from '../assets/tools/tools-frontend/tailwind.png';
+import Logo4 from '../assets/tools/tools-frontend/js.png';
+import Logo5 from '../assets/tools/tools-frontend/react.png';
+import Logo6 from '../assets/tools/tools-frontend/next.png';
+
+const tools = [
+  {
+    name: 'Front-end',
+    icon: <CodeIcon />,
+    imgs: [
+      { url: Logo1, alt: 'HTML' },
+      { url: Logo2, alt: 'CSS' },
+      { url: Logo3, alt: 'Tailwind' },
+      { url: Logo4, alt: 'Javascript' },
+      { url: Logo5, alt: 'React' },
+      { url: Logo6, alt: 'Next' },
+    ],
+  },
+  {
+    name: 'Back-end',
+    icon: <ServerIcon />,
+    imgs: [
+      { url: Logo1, alt: 'HTML' },
+      { url: Logo2, alt: 'CSS' },
+      { url: Logo3, alt: 'Tailwind' },
+      { url: Logo4, alt: 'Javascript' },
+      { url: Logo5, alt: 'React' },
+      { url: Logo6, alt: 'Next' },
+    ],
+  },
+  {
+    name: 'Design',
+    icon: <PencilIcon />,
+    imgs: [
+      { url: Logo1, alt: 'HTML' },
+      { url: Logo2, alt: 'CSS' },
+      { url: Logo3, alt: 'Tailwind' },
+      { url: Logo4, alt: 'Javascript' },
+      { url: Logo5, alt: 'React' },
+      { url: Logo6, alt: 'Next' },
+    ],
+  },
+  {
+    name: 'Frontend',
+    icon: <CodeIcon />,
+    imgs: [
+      { url: Logo1, alt: 'HTML' },
+      { url: Logo2, alt: 'CSS' },
+      { url: Logo3, alt: 'Tailwind' },
+      { url: Logo4, alt: 'Javascript' },
+      { url: Logo5, alt: 'React' },
+      { url: Logo6, alt: 'Next' },
+    ],
+  },
+];
 
 const details = {
   icon: ToolsIcon,
   title: 'Tools',
   subTitle: 'Tools we love',
   description:
-    ' We love to design and develop good products. Taking inspiration from different great products out there, Eventually, We decided that it would be a fun challenge to try designing and building our own. Building products that are great on both performance and experience aspect.',
+    '“We become what we behold. We shape our tools, and thereafter our tools shape us.” - Marshall McLuhan. Tools always plays an important role in an individaul professional life. Here are some of the tools we love and use for our work.',
   linkText: 'See more',
-  to: '/projects',
+  to: '/tools',
 };
 
 const colors = {
@@ -37,6 +97,11 @@ const SectionTools = () => {
       <div className='container mx-auto'>
         <SectionHeader section={details} colors={colors} />
       </div>
+      <SectionTabs
+        color='text-sky-500'
+        projects={tools}
+        Component={DesignTabs}
+      />
     </section>
   );
 };
