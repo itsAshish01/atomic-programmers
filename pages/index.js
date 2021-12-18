@@ -7,6 +7,7 @@ import SectionProjects from '../sections/SectionProjects';
 import SectionDesigns from '../sections/SectionDesigns';
 import SectionTools from '../sections/SectionTools';
 import SectionWhyUs from '../sections/SectionWhyUs';
+import SectionMessage from '../sections/SectionMessage';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <SectionDesigns />
       <SectionTools />
       <SectionWhyUs />
+      <SectionMessage />
     </div>
   );
 }
