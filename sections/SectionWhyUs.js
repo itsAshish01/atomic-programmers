@@ -25,7 +25,7 @@ const details = {
   description:
     'The Atomic Programmers difference. Even more reasons to choose us.',
   linkText: 'See more',
-  to: '/tools',
+  to: '/why-us',
 };
 
 const colors = {
