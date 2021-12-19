@@ -40,9 +40,12 @@ const Footer = () => {
                 <ul className='mt-3 space-y-2'>
                   {content.array.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.to}>
-                        <a className='hover:text-slate-900'>{item.name}</a>
-                      </Link>
+                      {item.to && (
+                        <Link href={item.to}>
+                          <a className='hover:text-slate-900'>{item.name}</a>
+                        </Link>
+                      )}
+                      {!item.to && <p>{item.name}</p>}
                     </li>
                   ))}
                 </ul>
